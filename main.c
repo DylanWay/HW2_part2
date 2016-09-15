@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "hw1.h"
+#include "hw1.c"
 
 /*Main initializes the array, calls reverse, and checks the final array with another
   array corresponding to the original message. */
