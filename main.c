@@ -12,25 +12,39 @@ int main()
 	char array2[18] = "some NUMmbers12345";
 	char array3[30] = "Does it reverse \n\0\t correctly?";
 	
-	error = reverse(array1, 17);
+	//prints the first string	
 	for(i = 0; i < 17; i++) {
 		printf("%c", *(array1+i));
 	}
 	printf("\n");
-
-
-	error = reverse(array2, 18);
+	error = reverse(array1, 17);
+	for(i = 0; i < 17; i++) {
+		printf("%c", *(array1+i));
+	}
+	printf("\n\n");
+	
+	//prints the second string
 	for(i = 0; i < 18; i++) {
 		printf("%c", *(array2+i));
 	}
 	printf("\n");
+	error = reverse(array2, 18);
+	for(i = 0; i < 18; i++) {
+		printf("%c", *(array2+i));
+	}
+	printf("\n\n");
 	
-	error = reverse(array3, 30);
+	//prtins the third string
 	for(i = 0; i < 30; i++) {
 		printf("%c", *(array3+i));
 	}
 	printf("\n");
-	
+	error = reverse(array3, 30);
+	for(i = 0; i < 30; i++) {
+		printf("%c", *(array3+i));
+	}
+	printf("\n\n");
+
 	//returns the error code	
 	return error;
 }
